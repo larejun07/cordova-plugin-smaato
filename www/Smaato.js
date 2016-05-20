@@ -560,7 +560,7 @@ Smaato.prototype.handleAll = function (url) {
 
                     this.options.SomaUserID = xhr.getResponseHeader("SomaUserID");
 
-                    this.updateView("<!DOCTYPE html><html><head><title>Smaato Ad page</title> <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script><style> #adContent>p { padding: 0; margin: 0; }</style></head><body style='overflow:hidden;margin: 0; padding: 0;'><div id='adContent'>" + xhr.responseText + "</div></body></html>");
+                    this.updateView("<!DOCTYPE html><html><head><title>Smaato Ad page</title> <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script><style> @-ms-viewport {width: device-width;} @viewport {width: device-width;} #adContent>p { padding: 0; margin: 0; }</style></head><body style='overflow:hidden;margin: 0; padding: 0;'><div id='adContent'>" + xhr.responseText + "</div></body></html>");
                 }
                 else {
                     //Error
